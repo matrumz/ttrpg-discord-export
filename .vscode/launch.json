@@ -1,0 +1,34 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "main.py",
+			"type": "python",
+			"pythonArgs": ["-B"],
+			"request": "launch",
+			"program": "${workspaceFolder}/src/rootfs/app/main.py",
+			"args": [
+				"--config", "${workspaceFolder}/.vscode/launch/config.yaml", "${workspaceFolder}/.vscode/launch/secret.yaml",
+				"--start", "2023-09-08-0000",
+				"--end", "2023-09-08-2359",
+			],
+			"console": "integratedTerminal",
+			"justMyCode": true
+		},
+		{
+			"name": "rerun",
+			"type": "python",
+			"pythonArgs": ["-B"],
+			"request": "launch",
+			"program": "${workspaceFolder}/src/rootfs/app/main.py",
+			"args": [
+				"--config", "/out/2023-09-08-0000__2023-09-08-2359/discord-exporter.config.2023-10-21-2158.yaml", "${workspaceFolder}/.vscode/launch/secret.yaml",
+			],
+			"console": "integratedTerminal",
+			"justMyCode": true
+		}
+	]
+}

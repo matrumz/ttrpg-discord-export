@@ -1,0 +1,12 @@
+tyrrrz/discordchatexporter:
+  export:
+    format: Json
+    parallel: 5
+date-format: "%Y-%m-%d-%H%M"
+export:
+  format: "{start_date}__{end_date}/{subdir}{server}.{channel}{'.'+thread if thread is not None else ''}.json"
+  tokens:
+    server: are-we-excited
+    subdir: transcripts/
+config-dump:
+  format: "{start_date}__{end_date}/discord-exporter.config.{run_date}.yaml"
